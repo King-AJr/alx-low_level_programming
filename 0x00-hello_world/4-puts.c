@@ -1,10 +1,12 @@
 #include <stdio.h>
-
 /**
- * This is a simple program that prints a messsage * with puts
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
-int main (void)
+
+int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle \n");
-return(0);
+return (0);
 }
