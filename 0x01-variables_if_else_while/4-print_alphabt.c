@@ -9,7 +9,6 @@
 int main(void)
 {
 char a = 'a';
-int i;
 for (a='a'; a <= 'z'; a++)
 {
 if (a == 'e' || a == 'q')
