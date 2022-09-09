@@ -9,12 +9,12 @@
 int main(void)
 {
 int i = 0;
-char a[10] = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
-while(i < 10)
+
+while (i < 10)
 {
-putchar(a[i]);
+printf("%d",i);
 i = i + 1;
 }
-putchar('\n');
+purchar('\n');
 return (0);
 }
