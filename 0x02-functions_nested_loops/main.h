@@ -1,3 +1,5 @@
+#include <unistd.h>
+
 /*this function is for printing out char*/
 int _putchar (char c);
 int _putchar (char c)
