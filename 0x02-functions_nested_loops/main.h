@@ -1,5 +1,3 @@
-#include <unistd.h>
-
 /*this function is for printing out char*/
 int _putchar (char c);
 
@@ -20,3 +18,6 @@ int _isalpha(int c);
 int print_sign(int n);
 
 /*_abs: prints the absolute value of an argument*/int _abs(int);
+
+/*print_last_digit: prints the last digit of a number*/
+int print_last_digit(int);
