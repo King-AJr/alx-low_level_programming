@@ -2,22 +2,9 @@
 #include "main.h"
 
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
-*/
-
-/*int main(void)
-*{
-*print_alphabet();
-*return (0);
-}
-*/
-
-
-/**
- * print_alphabet: prints lowercase alphabets
- * @a: stores the value to be displayed
+ *print_alphabet: prints lowercase alphabets
+ * 
+ *@a: stores the value to be displayed
  */
 
 void print_alphabet(void)
