@@ -14,7 +14,6 @@ for (i = 0; i < 9; i++)
 for (m = 0; i < 9; m++)
 {
 _putchar(j);
-_putchar(',');
 if (m == 8)
 {
 j = 0;
