@@ -21,3 +21,6 @@ int print_sign(int n);
 
 /*print_last_digit: prints the last digit of a number*/
 int print_last_digit(int);
+
+/* print all minutes in a day*/
+void jack_bauer(void);
