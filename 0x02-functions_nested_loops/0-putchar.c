@@ -20,12 +20,3 @@ _putchar ('\n');
 return (0);
 }
 
-/**
- * _putchar - prints a given argument
- * @c stores the argument
- */
-
-int _putchar (char c)
-{
-return (write(1, &c, 1));
-}
