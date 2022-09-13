@@ -3,8 +3,8 @@
 
 /**
  *print_alphabet: prints lowercase alphabets
- * 
- *@a: stores the value to be displayed
+ *
+ *Return - nothing always
  */
 
 void print_alphabet(void)
