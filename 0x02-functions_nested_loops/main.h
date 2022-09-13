@@ -1,12 +1,12 @@
 #include <unistd.h>
 
 /*this function is for printing out char*/
-/*
+
 int _putchar (char c)
 {
 return (write(1, &c, 1));
 }
-*/
+
 
 /*print_alphabet: print alphabets*/
 void print_alphabet (void);
