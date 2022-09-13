@@ -1,4 +1,5 @@
-#include <stdlib.h>
+#include <unistd.h>
+#include "main.h"
 
 /**
 * main - Entry point
@@ -8,7 +9,13 @@
 
 int main(void)
 {
-char *command = "echo '_putchar'";
-system(command);
+/*@parameter a: stores command*/
+char *a = "_putchar";
+while (*a)
+{
+_putchar (*a);
+a++;
+}
+_putchar ('\n');
 return (0);
 }
