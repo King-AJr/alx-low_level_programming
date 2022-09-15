@@ -1,11 +1,11 @@
 #include <unistd.h>
 /*putchar function*/
-/**
- * int _putchar(char c)
-*{
-*return (write(1, &c, 1));
-*}
-*/
+
+ int _putchar(char c)
+{
+return (write(1, &c, 1));
+}
+
 
 /* rhis function checks if a char is uppercase*/
 int _isupper(int c);
