@@ -22,15 +22,24 @@ int main(void)
 
 void print_triangle(int n)
 {
-int i, j;
-for (i = 0; i < n; i++)
+int i, j, k;
+if (n == 0)
 {
-for (j = n; j = i; j--)
+_putchar('\n');
+}
+else
+{
+for (i = 1; i <= n; i++)
+{
+for (j = 0; j != (n - i); j++)
 {
 _putchar(' ');
 }
+for (k = 0; k < i; k++)
+{
 _putchar('#');
-_putchar('\n');
 }
 _putchar('\n');
+}
+}
 }
