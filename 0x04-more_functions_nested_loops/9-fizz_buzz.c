@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
- * fizz_buzz - prints fizz, buzz or fizzbuzz based on condition met
+ * main - prints fizz, buzz or fizzbuzz based on condition met
  *
- * Return: return void
+ * Return: return 0 always
  */
 
-void fizz_buzz(void)
+int main(void)
 {
 int i;
 for (i = 1; i <= 100; i++)
@@ -30,4 +30,5 @@ printf("%d ", i);
 }
 }
 printf("\n");
+return (0);
 }
