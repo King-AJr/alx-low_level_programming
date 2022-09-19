@@ -22,3 +22,5 @@ void rev_string(char *s);
 /* print one skip one with strings*/
 void puts2(char *str);
 
+/* print second half of string*/
+void puts_half(char *str);
