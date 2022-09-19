@@ -1,36 +1,22 @@
 #include "main.h"
 #include <string.h>
 
-#include <stdio.h>
-
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
-void rev_string(char *s);
-int main(void)
-{
-    char s[10] = "My School";
-
-    printf("%s\n", s);
-    rev_string(s);
-    printf("%s\n", s);
-    return (0);
-}
-
-/**
- * print_rev - print given strings in reverse          * @s: stores the string passed to the fx
+ * rev_string - print given strings in reverse*
+ * @s: stores the string passed to the fx
  */
 void rev_string(char *s)
 {
-int len = strlen(s);
-char a[len];
-int right = len - 1;
-int i;
-for (i = right; i >= 0; i--)
+int len = 0, index = 0;
+char tmp;
+
+while (s[index++])
+len++;
+
+for (index = len - 1; index >= len / 2; index--)
 {
-a[i] = s[i];
+tmp = s[index];
+s[index] = s[len - index - 1];
+s[len - index - 1] = tmp;
 }
-printf("%s", a);
 }
