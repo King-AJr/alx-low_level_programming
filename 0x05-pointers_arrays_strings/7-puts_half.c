@@ -10,7 +10,8 @@ void puts_half(char *str)
 {
 int length = strlen(str);
 int len = length / 2;
-if (len % 2 = 0)
+int gbik;
+if (len % 2 == 0)
 gbik = len;
 else
 {
