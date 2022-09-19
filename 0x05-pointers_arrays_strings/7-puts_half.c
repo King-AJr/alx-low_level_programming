@@ -13,10 +13,10 @@ int length = strlen(str);
 int len = (length / 2);
 int gbik;
 if (len % 2 == 0)
-gbik = len;
+gbik = len + 1;
 else
 {
-gbik = len + 1;
+gbik = len; 
 }
 
 for (i = gbik; i <= length; i++)
