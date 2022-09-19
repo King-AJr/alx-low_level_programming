@@ -1,5 +1,5 @@
 /*putchar function*/
-int_putchar(char c);
+int _putchar(char c);
 
 /* assigns the memory of an int to pointer*/
 void reset_to_98(int *n);
