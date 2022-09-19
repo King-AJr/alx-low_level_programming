@@ -24,3 +24,6 @@ void puts2(char *str);
 
 /* print second half of string*/
 void puts_half(char *str);
+
+/* prints n number of array elements*/
+void print_array(int *a, int n);
