@@ -16,7 +16,7 @@ if (len % 2 == 0)
 gbik = len + 1;
 else
 {
-gbik = len; 
+gbik = len;
 }
 
 for (i = gbik; i <= length - 1; i++)
