@@ -15,3 +15,10 @@ void _puts(char *str);
 
 /*print strings in reverse*/
 void print_rev(char *s);
+
+/*reverses strings*/
+void rev_string(char *s);
+
+/* print one skip one with strings*/
+void puts2(char *str);
+
