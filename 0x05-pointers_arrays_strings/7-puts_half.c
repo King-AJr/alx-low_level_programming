@@ -19,7 +19,7 @@ else
 gbik = len; 
 }
 
-for (i = gbik; i <= length; i++)
+for (i = gbik; i <= length - 1; i++)
 {
 _putchar(str[i]);
 }
