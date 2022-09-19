@@ -10,9 +10,16 @@ void puts_half(char *str)
 {
 int length = strlen(str);
 int len = length / 2;
+if (len % 2 = 0)
+gbik = len;
+else
+{
+gbik = len + 1;
+}
 int i;
-for (i = len + 1; i <= length; i++)
+for (i = gbik; i <= length; i++)
 {
 _putchar(str[i]);
 }
+_putchar('\n');
 }
