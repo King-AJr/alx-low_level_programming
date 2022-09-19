@@ -1,2 +1,4 @@
 #!/bin/bash
+#runs a C file through the preprocessor
+# and save's the result into another file.
 gcc -E $CFILE -o c

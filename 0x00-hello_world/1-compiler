@@ -1,2 +1,4 @@
 #!/bin/bash
+#compiles a C file but does not link.
+# a compiled file that wasn't link ends with .o
 gcc -c $CFILE
