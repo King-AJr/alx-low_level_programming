@@ -13,4 +13,5 @@ int _strlen(char *s);
 /* prints a string with the _putchar fx*/
 void _puts(char *str);
 
-
+/*print strings in reverse*/
+void print_rev(char *s);
