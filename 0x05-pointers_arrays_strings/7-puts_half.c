@@ -8,6 +8,7 @@
 
 void puts_half(char *str)
 {
+int i = 0;
 int length = strlen(str);
 int len = length / 2;
 int gbik;
@@ -17,7 +18,7 @@ else
 {
 gbik = len + 1;
 }
-int i;
+
 for (i = gbik; i <= length; i++)
 {
 _putchar(str[i]);
