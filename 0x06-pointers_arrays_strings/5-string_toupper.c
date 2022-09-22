@@ -4,11 +4,11 @@
 
 /**
  * string_toupper - converts a given string to uppercase
- * @h: string passed to the function
+ * @str: string passed to the function
  * Return: return uppercase string
  */
 
-char *string_toupper(char *h)
+char *string_toupper(char *str)
 {
 int index = 0;
 
