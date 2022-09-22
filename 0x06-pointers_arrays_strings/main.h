@@ -9,3 +9,6 @@ char *_strncpy(char *dest, char *src, int n);
 
 /*reverse the contemt of an array of integers*/
 void reverse_array(int *a, int n);
+
+/*compare two strings*/
+int _strcmp(char *s1, char *s2);
