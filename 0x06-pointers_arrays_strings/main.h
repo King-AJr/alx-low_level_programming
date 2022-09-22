@@ -12,3 +12,6 @@ void reverse_array(int *a, int n);
 
 /*compare two strings*/
 int _strcmp(char *s1, char *s2);
+
+/*changes all lowercase to uppercase in a string*/
+char *string_toupper(char *);
