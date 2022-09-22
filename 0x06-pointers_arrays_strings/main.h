@@ -15,3 +15,6 @@ int _strcmp(char *s1, char *s2);
 
 /*changes all lowercase to uppercase in a string*/
 char *string_toupper(char *);
+
+/*capitalizes the first character of each word*/
+char *cap_string(char *);
