@@ -18,3 +18,6 @@ char *string_toupper(char *);
 
 /*capitalizes the first character of each word*/
 char *cap_string(char *);
+
+/*uses leet encoding to convert letters*/
+char *leet(char *);
