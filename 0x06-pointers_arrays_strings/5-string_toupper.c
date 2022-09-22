@@ -10,13 +10,15 @@
 
 char *string_toupper(char *h)
 {
-int i;
-char ch;
-int j = strlen(h);
+int index = 0;
 
-for (i = 0; i <= j; i++)
+while (str[index])
 {
-h[i] = toupper(h[i]);
+if (str[index] >= 'a' && str[index] <= 'z')
+str[index] -= 32;
+
+index++;
 }
-return (h);
+
+return (str);
 }
