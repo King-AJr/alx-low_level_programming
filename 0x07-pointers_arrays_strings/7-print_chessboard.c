@@ -1,38 +1,27 @@
 #include "main.h"
 
-#include <stdio.h>
-
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_chessboard - print character of an 8x8 array
+ * @a: pointer to array
+ * Return: void
  */
-int main(void)
-{
-    char board[8][8] = {
-        {'r', 'k', 'b', 'q', 'k', 'b', 'k', 'r'},
-        {'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'},
-        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-        {'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
-        {'R', 'K', 'B', 'Q', 'K', 'B', 'K', 'R'},
-    };
-    print_chessboard(board);
-    return (0);
-}
 
 void print_chessboard(char (*a)[8])
 {
 int i, j;
+char *baz = *a;
 
-for (i = 0; i < 8; i++)
-{
-	for (j = 0; j < 8; i++)
-	{		
-		_putchar(a[i][j]);
+	for (i = 1; i <= 63; i++)
+	{
+		if (i % 8 == 0)
+		{
+			_putchar('\n');
+			_putchar(baz[i]);
+		}
+		else
+		{
+			_putchar(baz[i]);
+		}
 	}
 	_putchar('\n');
-}
 }
