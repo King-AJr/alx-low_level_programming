@@ -27,3 +27,6 @@ char *_strpbrk(char *s, char *accept);
 
 /*prints out contents of a two dimensional array*/
 void print_chessboard(char (*a)[8]);
+
+/*prints the sum of the two diagonals of a square matrix of integers.*/
+void print_diagsums(int *a, int size);
