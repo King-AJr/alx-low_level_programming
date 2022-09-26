@@ -8,20 +8,14 @@
 
 void print_chessboard(char (*a)[8])
 {
-int i;
-char *baz = *a;
+	int indx1, indx2;
 
-	for (i = 1; i <= 63; i++)
+	for (indx1 = 0; a[indx1][7]; indx1++)
 	{
-		if (i % 8 == 0)
-		{
-			_putchar('\n');
-			_putchar(baz[i]);
-		}
-		else
-		{
-			_putchar(baz[i]);
-		}
+		for (indx2 = 0; indx2 < 8; indx2++)
+			_putchar(a[indx1][indx2]);
+
+		_putchar('\n');
 	}
-	_putchar('\n');
+
 }
