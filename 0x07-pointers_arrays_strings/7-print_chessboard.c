@@ -8,7 +8,7 @@
 
 void print_chessboard(char (*a)[8])
 {
-int i, j;
+int i;
 char *baz = *a;
 
 	for (i = 1; i <= 63; i++)
