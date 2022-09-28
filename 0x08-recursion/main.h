@@ -22,3 +22,7 @@ int factorial(int n);
 
 /*returns x raised to the power of y*/
 int _pow_recursion(int x, int y);
+
+/*returns the square root of a number*/
+int is_prime_number(int n);
+
