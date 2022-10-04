@@ -16,3 +16,6 @@ char *_strdup(char *str);
 
 /*concatenates 2 strings*/
 char *str_concat(char *s1, char *s2);
+
+/* return a pointer to a 2d array*/
+int **alloc_grid(int width, int height);
