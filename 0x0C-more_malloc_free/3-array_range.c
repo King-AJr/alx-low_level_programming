@@ -21,9 +21,9 @@ int *array_range(int min, int max)
 	c = malloc(b * sizeof(int));
 	if (c == NULL)
 		return (NULL);
-	for (i = min; i <= max; i++)
+	for (i = 0; i <= b; i++)
 	{
-		c[i] = i;
+		c[i] = min++;
 	}
 	return (c);
 }
