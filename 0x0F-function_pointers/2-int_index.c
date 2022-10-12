@@ -14,28 +14,20 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 	if (size <= 0)
 		return (-1);
-/**
- * loop - loops through and applies cmp to array and returns index
- * Return: return index
- */
 
-	int loop(void)
+	for (i = 0; i <= size; i++)
 	{
-		for (i = 0; i <= size; i++)
-		{
-			j = cmp(array[i]);
+		j = cmp(array[i]);
 
-			if (j != 0)
-				break;
+		if (j != 0)
+			break;
 
-			if (i == size && j == 0)
-				return (-1);
-		}
+		if (i == size && j == 0)
+			return (-1);
 
-		return (i);
 	}
 
-	k = loop();
+	k = i;
 
 	return (k);
 }
