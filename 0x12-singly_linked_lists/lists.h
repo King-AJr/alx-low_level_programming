@@ -3,11 +3,12 @@
 #include <unistd.h>
 /*putchar function*/
 int _putchar (char c);
+/*
 int _putchar(char c)
 {
 return (write(1, &c, 1));
 }
-
+*/
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
