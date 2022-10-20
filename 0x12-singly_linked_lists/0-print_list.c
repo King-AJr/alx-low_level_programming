@@ -1,7 +1,5 @@
 #include <stdio.h>
-#include <stdint.h>
 #include "lists.h"
-#include <stdlib.h>
 
 /**
  * print_list - takes a the head of a linked list
