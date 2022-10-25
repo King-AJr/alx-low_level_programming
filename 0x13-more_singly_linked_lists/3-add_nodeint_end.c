@@ -1,4 +1,10 @@
 #include "lists.h"
+/**
+ * add_nodeint_end - add node to end of linked list
+ * @head: pointer to head of list
+ * @n: data ro be stored in new node
+ * Return: return address to new node
+ */
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
