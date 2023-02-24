@@ -5,5 +5,11 @@ OBJ=$(SRC:.c=.o)
 
 all:$(NAME)
 
+clean:
+	rm -f *.o $(NAME)
+
+.PHONY:
+	oclean fclean:clean
+
 $(NAME): $(OBJ)
 	$(CC) $(SRC) -o $(NAME)
