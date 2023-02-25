@@ -2,21 +2,24 @@
 """Contains perimeter function"""
 
 def island_perimeter(grid):
-    """returns the perimeter of a rectangle
-        in a grid baased on positions of 1's 
-        in the grid """
-    a = len(grid)
-    temp = 0
-    length = 0
-    for i in range(a):
-        prev = 0
-        width = temp
-        temp = 0
-        for j in grid[i]:
+    """Return the perimiter of an island.
+    The grid represents water by 0 and land by 1.
+    Args:
+        grid (list): A list of list of integers representing an island.
+    Returns:
+        The perimeter of the island defined in grid.
+    """
+    width = len(grid[0])
+    height = len(grid)
+    edges = 0
+    size = 0
+
+    for i in range(height):
+        for j in range(width):
             if grid[i][j] == 1:
-                prev = 1
-                temp += 1
-        if prev == 1:
-            length += 1
-    perimeter = 2 * (length + width)
-    return perimeter
+                size += 1
+                if (j > 0 and grid[i][j - 1] == 1):
+                    edges += 1
+                if (i > 0 and grid[i - 1][j] == 1):
+                    edges += 1
+    return size * 4 - edges * 2
