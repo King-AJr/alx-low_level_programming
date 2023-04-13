@@ -32,12 +32,12 @@ int recursive_search(size_t low, size_t high, int *array, int value)
 	else if (array[mid] < value)
 	{
 		low = mid + 1;
-		return (recursive(low, high, array, value));
+		return (recursive_search(low, high, array, value));
 	}
 	else
 	{
 		high = mid - 1;
-		return (recursive(low, high, array, value));
+		return (recursive_search(low, high, array, value));
 	}
 }
 
@@ -50,14 +50,17 @@ int recursive_search(size_t low, size_t high, int *array, int value)
  */
 int binary_search(int *array, size_t size, int value)
 {
+	size_t low;
+	size_t high;
+	int index;
+
 	if (array == NULL)
 		return (-1);
 
-	size_t low = 0;
-	size_t high = size - 1;
-	int index;
+	low = 0;
+	high = size - 1;
 
-	index = recursive(low, high, array, value);
+	index = recursive_search(low, high, array, value);
 
 	return (index);
 }
