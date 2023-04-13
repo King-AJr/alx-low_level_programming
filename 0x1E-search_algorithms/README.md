@@ -1,1 +1,1 @@
-This directory is for alx projects on search algorithms and time complexity
+This directory is for alx task on search algorithms and searcg complexity
